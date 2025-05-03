@@ -17,7 +17,8 @@ export default function Home() {
       setStory(data.story);
 
       // 2. 呼叫 TTS 伺服器生成語音
-      const ttsRes = await fetch('https://storymama-tts-ready.vercel.app/api/tts', {
+      const ttsRes = await fetch('https://imyfone-ai-chat.vercel.app/api/tts', {
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
